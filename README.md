@@ -1,6 +1,6 @@
-# Tomcat Image Builder
+# Node.js Image Builder
 
-appLariat's generic image builder for tomcat. This is the default build configuration for tomcat images and is used by the appLariat Component Builder service
+appLariat's generic image builder for Node.js. This is the default build configuration for tomcat images and is used by the appLariat Component Builder service
 
 Default build workflow:
 
