@@ -1,4 +1,4 @@
 #! /bin/sh
-# appLariat generic tomcat entrypoint.sh
+# appLariat generic entrypoint.sh
 
 exec @
