@@ -5,6 +5,7 @@
 
 mkdir -p /usr/src/app
 
+#Check for package.json and throw exception if not present
 if [ -e $artifact_root/package.json ]
 then
     cp -f $artifact_root/package.json /usr/src/app/
