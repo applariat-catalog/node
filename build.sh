@@ -11,9 +11,9 @@ set -x
 mkdir -p /usr/src/app
 
 #Check for package.json and throw exception if not present
-if [ -e /src/package.json ]
+if [ -e /code/package.json ]
 then
-    cp -rf /src/package.json /usr/src/app/
+    cp -rf /code/package.json /usr/src/app/
 else
     echo "ERROR! package.json not found"
     exit 1
@@ -21,4 +21,4 @@ fi
 
 npm install && npm cache clean --force
 
-cp -rf /src/* /usr/src/app
+cp -rf /code/* /usr/src/app
