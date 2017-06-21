@@ -1,10 +1,10 @@
 #! /bin/sh
 # appLariats generic tomcat build script
-# Requirements - A valid package.json file exists within the src_dir
-# Copies the package.json file from the src_dir and copies it into /usr/src/app/
+# Requirements - A valid package.json file exists within the code_dir
+# Copies the package.json file from the code_dir and copies it into /usr/src/app/
 
-#Log everything in /src/build.log
-logfile=/src/build.log
+#Log everything in /code/build.log
+logfile=/code/build.log
 exec > $logfile 2>&1
 set -x
 
