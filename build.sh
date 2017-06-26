@@ -4,7 +4,7 @@
 # Copies the package.json file from the code_dir and copies it into /usr/src/app/
 
 #Log everything in /code/build.log
-logfile=/code/build.log
+logfile=/build.log
 exec > $logfile 2>&1
 set -x
 
