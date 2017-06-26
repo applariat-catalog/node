@@ -13,12 +13,16 @@ mkdir -p /usr/src/app
 #Check for package.json and throw exception if not present
 if [ -e /code/package.json ]
 then
-    cp -rf /code/package.json /usr/src/app/
+    mv /code/package.json /usr/src/app/
 else
     echo "ERROR! package.json not found"
     exit 1
 fi
 
+cd /usr/src/app
 npm install && npm cache clean --force
 
+#Move the remainder of the node project into APP_HOME
 cp -rf /code/* /usr/src/app
+#Cleaning up after ourselves
+rm -rf /code
